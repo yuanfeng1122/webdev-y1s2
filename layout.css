@@ -12,11 +12,11 @@ nav{
     background: rgb(57, 0, 69);
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
     width:100%;
     height:8%;
     position:fixed;
-    overflow: hidden;
+    /* overflow: hidden; */
     top: 0;
     left:0;
     z-index: 2;
@@ -31,8 +31,9 @@ nav{
 
 #nav_img{
     float:left;
-    width: 12%;
-    height: 12%;
+    width: 15%;
+    height: 15%;
+    margin-left: 10px;
 }   
 
 #nav_container2{
@@ -43,11 +44,13 @@ nav{
 
 #nav_container2 p{
     float:left;
-    margin-left: -680px;
+    margin-left: -630px;
     color: white;
 }
 
 nav ul{
+    padding: 0;
+    margin: 0;
     list-style-type: none;
     float: right;
     display: flex; 
@@ -55,26 +58,111 @@ nav ul{
     /* margin-left: 50px; */
 }
 
-nav li {
-    float: left;
-    white-space: nowrap;
+#nav_container3{
+    display: flex;
+    align-items: center;
+    flex:1;
 }
 
-nav a {
+#nav_container3 ul li {
+    /* float: left; */
+    text-align: center;
+    /* width:100px; */
+    white-space: nowrap;
+    position: relative;
+    background: rgb(57, 0, 69);
+    display: inline-block;
+}
+
+#nav_container ul li:nth-child(odd){
+    background-color: rgb(137, 81,164);
+}
+
+#nav_container ul li:nth-child(even){
+    background-color: rgb(57, 0, 69);
+}
+
+nav ul li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    overflow: visible;
 }
 
 nav a:hover{
     text-shadow: 0px 0px 10px rgb(226, 81, 255);
 }
 
+.nav_text{
+    position: relative;
+    display: inline-block;
+}
+
+#nav_container3 ul li ul{
+    min-width: 100px;
+    width: 100px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    transform: translate(-50%, 0);
+    left: 50%;
+    /* background-color: rgb(57, 0, 69); */
+    width: 100%;
+    padding: 0;
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+#nav_container3 ul li:hover ul {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+#nav_container3 ul li ul li{
+    display: block;
+    width: 100%;
+}
+
+#nav_container3 ul li ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav ul li ul li a:hover {
+    background-color: rgb(137, 81,164);
+}
+
+#nav_container3 ul li div{
+    overflow: hidden;
+}
+
+#nav_container4{
+    display: flex;
+    align-items: center;
+}
+
+#nav_container4 ul li{
+    width: 60px;
+    background:none;
+    overflow: hidden;
+}
+
 #signin, #cart {
     width: 35px;
     height: 35px;
+    margin-right: 50px;
 }
 
 footer {
