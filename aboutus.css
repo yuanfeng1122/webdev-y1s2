@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+.story img{
+    width: 100%;
+    height: 800px;
+    padding-bottom: 25px;
+}
+
+.border{
+    width: 80%;
+    height: 3px;
+    background: #383838;
+    margin: 10px auto;
+}
+
+.story h1{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 1200;
+    font-family: 'Russo One', sans-serif;
+    color: rgb(70, 0, 86);
+    text-decoration: underline;
+}
+
+.story p{
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(70, 0, 86);
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.col {
+    width: 33.33%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.col h1{
+    font-size: 45px;
+    color: red;
+    font-weight: 1200;
+    font-family: 'Russo One', sans-serif;
+    margin-bottom: -30px;
+}
+
+.story2 p{
+    font-size: 16px;
+    color: rgb(70, 0, 86);
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+.team{
+    background-color: rgb(241, 239, 239);
+    padding-top: 40px;
+    margin-bottom: -50px;
+}
+
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col2 {
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.team img{
+    height: 80%;
+    width: 100%;
+    display: block;
+    
+}
+
+.team h1{
+    font-size: 35px;
+    font-weight: 1200;
+    font-family: 'Russo One', sans-serif;
+    color: rgb(70, 0, 86);
+    margin-top: 0;
+    text-decoration: underline;
+}
+
+.team p{
+    font-size: 16px;
+    color: rgb(70, 0, 86);
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+.mission{
+    width: 100%;
+    background-color: rgb(237, 224, 240);
+    padding-top: 20px;
+}
+
+.row3 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.col3{
+    width: 50%;
+}
+
+.mission img{
+    height: 40%;
+    width: 50%;
+    border-radius: 30px;
+    margin-left: 27%;
+}
+
+.mission h1{
+    font-size: 35px;
+    font-weight: 1200;
+    font-family: 'Russo One', sans-serif;
+    color: rgb(70, 0, 86);
+    margin-top: 0;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.mission ul{
+    font-size: 16px;
+    color: rgb(70, 0, 86);
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    margin-left: 25%;
+}
