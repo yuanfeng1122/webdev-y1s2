@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="icon" href="img/logo3.ico">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
@@ -17,74 +18,42 @@
 
     </head>
     <body>
-      <nav>
-        <div id="nav_container">
-            <a href="index.html"><img src="img/logo.jpg" id="nav_img" alt="logo of Sport Direct"></a>
-        </div>
-        <div id="nav_container2">
-            <p id="nav_title">About Us</p>
-        </div>
-        <div id="nav_container3">
-            <ul>
-                <li><a class="nav_text" href="#">Promotion</a>
-                    <ul>
-                        <li><a href="#">Test1</a></li>
-                        <li><a href="#">Test2</a></li>
-                        <li><a href="#">Test3</a></li>
-                    </ul>
-                </li> 
-                <li><a class="nav_text" href="#">Men</a>
-                    <ul>
-                        <li><a href="#">Test123577</a></li>
-                        <li><a href="#">Test</a></li>
-                        <li><a href="#">Test</a></li>
-                    </ul>
-                </li>
-                <li><a class="nav_text" href="#">Women</a>
-                    <ul>
-                        <li><a href="#">Test</a></li>
-                        <li><a href="#">Test</a></li>
-                        <li><a href="#">Test</a></li>
-                    </ul>
-                </li> 
-                <li><a class="nav_text" href="#">Kid</a>
-                    <ul>
-                        <li><a href="#">Test</a></li>
-                        <li><a href="#">Test</a></li>
-                        <li><a href="#">Test</a></li>
-                        <li><a href="#">Test</a></li>
-                    </ul>
-                </li> 
-                <li><a class="nav_text" href="#">Equipment</a>
-                    <ul>
-                        <li><a href="#">Test</a></li>
-                        <li><a href="#">Test</a></li>
-                        <li><a href="#">Test</a></li>
-                    </ul>
-                </li> 
-                <li><a class="nav_text" href="aboutus.html">About us</a></li> 
-            </ul>
-            <div id="nav_container4">
+        <nav>
+            <div id="nav_container">
+                <a href="index.html"><img src="img/logo.jpg" id="nav_img" alt="logo of Sport Direct"></a>
+            </div>
+            <div id="nav_container2">
+                <p id="nav_title">Homepage</p>
+            </div>
+            <div id="nav_container3">
                 <ul>
+                    <li><a class="nav_text" href="#">Promotion</a></li> 
+                    <li><a class="nav_text" href="#">Men</a></li>
+                    <li><a class="nav_text" href="#">Women</a></li> 
+                    <li><a class="nav_text" href="#">Kid</a></li> 
+                    <li><a class="nav_text" href="#">Equipment</a></li> 
+                    <li><a class="aboutus.html" href="#">About us</a></li> 
                     <li><div><a href="#"><img id="signin" src="img/profile_icon.png" alt="Sign In"></a></div></li>
                     <li><div><a href="#"><img id="cart" src="img/cart_icon.png" alt="Cart"></a></div></li>
                 </ul>
             </div>
-        </div>
-    </nav>
+        </nav>
+
         <div class="story">
             <img src="img/sportsdirect.jpg" alt="sportsdirect">
-            <div class="border"></div>
-            <h1>About us</h1>
-            <p>
-              Sports Direct is a British retail company founded by Mike Ashley in 1982.<br>
-              Originally named Mike Ashley Sports, the company rebranded as Sports Direct in 2000.<br>
-              The company has since become one of the largest sports retailers in the world<br>
-            </p>
+            <div class="text" data-aos="zoom-in"  data-aos-duration="1000" data-aos-delay="10">
+              <h1>About us</h1>
+              <p>
+                Sports Direct is a British retail company founded by Mike Ashley in 1982.<br>
+                Originally named Mike Ashley Sports, the company rebranded as Sports Direct in 2000.<br>
+                The company has since become one of the largest sports retailers in the world.<br>
+              </p>
+            </div>
         </div>
         
         <div class="story2">
-          <div class="row">
+          <div class="border"></div>
+          <div class="row" data-aos="fade"  data-aos-duration="1000" data-aos-delay="20">
             <div class="col">
                 <h1>600+</h1><br>
               <p>
@@ -106,28 +75,11 @@
           </div>
         </div>
 
-        <div class="team">
-          <div class="row2">
-            <div class="col2">
-              <h1>Our Team</h1>
-              <p>
-                  At Sports Direct, we have a team of dedicated professionals who are passionate about <br>sports and helping our customers find the right gear to meet their needs. <br><br>
-                  Our team includes experienced sales associates, product experts, and customer service <br>representatives who are always happy to assist you with your purchases.<br> <br>
-                  We believe that our team is the key to our success, and we are committed to providing <br>ongoing training and support to help our employees grow and develop in their roles.<br> <br>
-                  We are proud to have a diverse team that reflects the communities we serve, and we strive <br>to create an inclusive and welcoming workplace for all.<br> <br>
-                  Whether you're looking for advice on the best running shoes for your next race or need help <br>finding the perfect gift for the sports lover in your life, our team is here to help.<br> 
-                  Get to know us better by visiting one of our stores or contacting us online.
-              </p>
-            </div>
-            <div class="col2">
-              <img src="img/team.jpg" alt="sportsdirect team">
-            </div>
-          </div>
-        </div>
+
 
         <div class="mission">
           <div class="row3">
-            <div class="col3">
+            <div class="col3" data-aos="fade-left"  data-aos-duration="1000" data-aos-delay="50">
               <h1>Our Vision</h1>
               <img src="img/vision.jpg" alt="sportsdirect team" id="img1">
               <ul>
@@ -137,7 +89,7 @@
               </ul>
             </div>
 
-            <div class="col3">
+            <div class="col3" data-aos="fade-right"  data-aos-duration="1000" data-aos-delay="50">
               <h1>Our Mission</h1>
               <img src="img/mission.jpg" alt="sportsdirect team" id="img2">
               <ul>
@@ -149,6 +101,80 @@
           </div>
         </div>
 
+        <div class="team">
+          <div class="row2">
+            <div class="col2" data-aos="fade-left"  data-aos-duration="1000" data-aos-delay="30">
+              <h1>Our Team</h1>
+              <p>
+                  At Sports Direct, we have a team of dedicated professionals who are passionate about <br>sports and helping our customers find the right gear to meet their needs. <br><br>
+                  Our team includes experienced sales associates, product experts, and customer service <br>representatives who are always happy to assist you with your purchases.<br> <br>
+                  We believe that our team is the key to our success, and we are committed to providing <br>ongoing training and support to help our employees grow and develop in their roles.<br> <br>
+                  We are proud to have a diverse team that reflects the communities we serve, and we strive <br>to create an inclusive and welcoming workplace for all.<br> <br>
+                  Whether you're looking for advice on the best running shoes for your next race or need help <br>finding the perfect gift for the sports lover in your life, our team is here to help.<br> 
+                  Get to know us better by visiting one of our stores or contacting us online.
+              </p>
+            </div>
+            <div class="col2" data-aos="fade-right"  data-aos-duration="1000" data-aos-delay="50">
+              <img src="img/team.jpg" alt="sportsdirect team">
+            </div>
+          </div>
+        </div>
+
+        <article class="flow" data-aos="slide-up"  data-aos-duration="1000" data-aos-delay="10">
+          <h1>Sports Direct Executive Team</h1>
+          <p>Learn more about the leadership team behind Sports Direct</p>
+          <div class="team">
+            <ul class="auto-grid" role="list">
+              <li>
+                <div class="profile">
+                  <h2 class="profile__name">Mike Ashley</h2>
+                  <p id="occupation">Founder</p>
+                  <img src="img/mikeashley.jpg" alt="Mike Ashley" />
+                </div>
+              </li>
+              <li>
+                <div class="profile">
+                  <h2 class="profile__name">Michael Murray</h2>
+                  <p id="occupation">Creative Director</p>
+                  <img src="img/MichaelMurray.jpg" alt="Michael Murray" />
+                </div>
+              </li>
+              <li>
+                <div class="profile">
+                  <h2 class="profile__name">Chris Wootton</h2>
+                  <p id="occupation">Chief Financial Officer</p>
+                  <img src="img/chris_wootton.jpg" alt="Chris Wootton" />
+                </div>
+              </li>
+              <li>
+                <div class="profile">
+                  <h2 class="profile__name">Liam Rowley</h2>
+                  <p id="occupation">Brands and Marketing</p>
+                  <img src="img/liam_rowley.jpg" alt="Liam Rowley" />
+                </div>
+              </li>
+              <li>
+                <div class="profile">
+                  <h2 class="profile__name">Mark Alexander</h2>
+                  <p id="occupation">Retail</p>
+                  <img src="img/Mark_Alexander.jpg" alt="Mark Alexander"/>
+                </div>
+              </li>
+              <li>
+                <div class="profile">
+                  <h2 class="profile__name">Sean Nevitt</h2>
+                  <p id="occupation">Secretary</p>
+                  <img src="img/sean_nevitt.jpg" alt="Sean Nevitt" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
           
         <footer>
           <div class="logo-container">
@@ -163,7 +189,7 @@
           </div>
           <div class="footer-links">
               <a href="#">FAQ</a>
-              <a href="aboutus.html">About Us</a>
+              <a href="#">About Us</a>
               <a href="#">My Account</a>
               <div>&mdash;</div>
               <a href="tel:+603-56149700">03-5614 9700</a>
